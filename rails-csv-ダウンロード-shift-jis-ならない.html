@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=" crossorigin="anonymous" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css" integrity="sha256-tBxlolRHP9uMsEFKVk+hk//ekOlXOixLKvye5W2WR5c=" crossorigin="anonymous" />
+		<link href="https://fonts.googleapis.com/css?family=Mr+Dafoe" rel="stylesheet" type="text/css">
+
+		<style type="text/css">
+			html,body{font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:400;background:#f3f3f3 url(https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DRails%25E3%2581%25A7CSV%25E3%2582%2592%25E5%2587%25BA%25E5%258A%259B%25E3%2581%2599%25E3%2582%258B%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%2528Shift_JIS%25E5%25AF%25BE%25E5%25BF%259C%2529%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Ddc78f22121c8c71aa12e1475edfe1cbd&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540hirokik-0076%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Db3b242d2f6b7ccb3c57183efdfbb0e55&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=47a7a8678fd7e1a49d0954384e81abab
+) no-repeat center center fixed;background-size:cover;height:100%}#title{font-family:"Mr Dafoe",Times,serif;font-size:34px;background:rgba(255,255,255,.8);margin-bottom:34px}.header{padding-bottom:13px;margin-bottom:13px;border-bottom:1px solid #eee}a{color:#26ADE4;text-decoration:none}#title a{color:#333;margin-left:21px}#title a:hover{text-decoration:none;color:#26ADE4}.sidebar ul{margin:0;padding:0}.sidebar ul li{list-style:none}.footer{margin-top:21px;padding-top:13px;border-top:1px solid #eee}.footer a{margin:0 15px}.navi{margin:13px 0 13px 0;padding:13px}.navi a{margin:5px 2px;font-size:95%}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}.v-cover{height: 380px; object-fit: cover;}.v-image{height: 200px; object-fit: cover;}.dwn-cover{max-height: 460px; object-fit: cover;}.main{margin-top: 6rem;}.form-inline .form-control{min-width: 300px;}			
+		</style>
+
+		<title>Rails Csv ダウンロード Shift Jis ならない</title>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org/", 
+  "@type": "Article", 
+  "author": {
+    "@type": "Person",
+    "name": "James"
+  },
+  "headline": "Rails Csv ダウンロード Shift Jis ならない",
+  "datePublished": "2021-04-25",
+  "image": [https://www.imd-net.com/media/2014/11/csv_export_3.png,http://railscasts.com/static/episodes/asciicasts/E362I03.png,https://i.gyazo.com/3cdd6421f911ab06e034171376c5b00d.png],
+  "publisher": {
+    "@type": "Organization",
+    "name": "Blog",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://via.placeholder.com/512.png?text=rails csv ダウンロード shift jis ならない",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
+</script>
+		<!-- Head tag Code -->	</head>
+	<body>
+		<header class="bg-white fixed-top">			
+			<nav class="navbar navbar-light bg-white mb-0">
+				<div class="container justify-content-center justify-content-sm-between">	
+				  <a href="/" title="Blog" class="navbar-brand mb-1">Blog</a>
+				  				</div>			  
+			</nav>				
+		</header>
+		<main class="main container bg-white">
+			<div class="col-md-12 my-4" align="center">
+				<div class="d-block p-4">
+	<br/><center>
+<script type="text/javascript">
+	atOptions = {
+		'key' : 'd232bd6e1c0d85f8dc8c8119bc5f5a1e',
+		'format' : 'iframe',
+		'height' : 250,
+		'width' : 300,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/d232bd6e1c0d85f8dc8c8119bc5f5a1e/invoke.js"></scr' + 'ipt>');
+</script></center><br/>
+</div>			</div>
+			<div class="row header">
+				<div class="col-sm-12 text-center p-2">
+						<h1>Rails Csv ダウンロード Shift Jis ならない</h1>
+
+	
+	<div class="navi text-center">
+										<a class="badge badge-info" href="/ps4-%E7%B4%85%E8%93%AE%E3%81%AE%E3%83%AA%E3%83%99%E3%83%AC%E3%83%BC%E3%82%BF%E3%83%BC-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84.html">ps4 紅蓮のリベレーター ダウンロードできない</a>
+											<a class="badge badge-secondary" href="/nifty-%E5%8F%97%E4%BF%A1%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89.html">nifty 受信できない ダウンロード</a>
+											<a class="badge badge-warning" href="/excel%E3%82%AA%E3%83%B3%E3%83%A9%E3%82%A4%E3%83%B3-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E7%B7%A8%E9%9B%86%E5%87%BA%E6%9D%A5%E3%81%AA%E3%81%84.html">excelオンライン ダウンロード編集出来ない</a>
+											<a class="badge badge-info" href="/%E4%BD%90%E8%B3%80-%E3%83%87%E3%83%BC%E3%83%88-%E9%A3%9F%E4%BA%8B-%E5%80%8B%E5%AE%A4.html">佐賀 デート 食事 個室</a>
+											<a class="badge badge-danger" href="/%E3%82%A2%E3%83%97%E3%83%AA-%E5%8B%95%E4%BD%9C%E7%92%B0%E5%A2%83-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84.html">アプリ 動作環境 ダウンロードできない</a>
+											<a class="badge badge-warning" href="/5k-player-youtube-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84.html">5k player youtube ダウンロードできない</a>
+											<a class="badge badge-success" href="/ps4-dl%E7%89%88-%E4%BA%88%E7%B4%84-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84.html">ps4 dl版 予約 ダウンロードされない</a>
+											<a class="badge badge-warning" href="/%E5%8D%8A%E5%8B%83%E8%B5%B7-%E3%83%87%E3%83%BC%E3%83%88-30%E4%BB%A3.html">半勃起 デート 30代</a>
+											<a class="badge badge-dark" href="/1709%E6%9B%B4%E6%96%B0-%E9%80%B2%E3%81%BE%E3%81%AA%E3%81%84-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-100.html">1709更新 進まない ダウンロード 100</a>
+											<a class="badge badge-dark" href="/kingsoft-2015-avila%E3%82%A8%E3%83%B3%E3%82%B8%E3%83%B3%E3%81%8C%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%95%E3%82%8C%E3%81%AA%E3%81%84.html">kingsoft 2015 avilaエンジンがダウンロードされない</a>
+											<a class="badge badge-light" href="/microsoft-mahjong-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84.html">microsoft mahjong ダウンロードできない</a>
+											<a class="badge badge-warning" href="/%E4%BD%93-%E3%81%8C-%E5%BC%B1%E3%81%84-%E3%83%87%E3%83%BC%E3%83%88.html">体 が 弱い デート</a>
+											<a class="badge badge-success" href="/ipad-%E3%82%A2%E3%83%97%E3%83%AA-%E3%82%92-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89-%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84.html">ipad アプリ を ダウンロード できない</a>
+											<a class="badge badge-light" href="/backwpup%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84.html">backwpupダウンロードできない</a>
+											<a class="badge badge-dark" href="/visual-studio-code-%E6%8B%A1%E5%BC%B5%E6%A9%9F%E8%83%BD-%E3%83%80%E3%82%A6%E3%83%B3%E3%83%AD%E3%83%BC%E3%83%89%E3%81%A7%E3%81%8D%E3%81%AA%E3%81%84.html">visual studio code 拡張機能 ダウンロードできない</a>
+						</div>
+<center>
+	<script type="text/javascript">
+	atOptions = {
+		'key' : 'a7e6ae4bcf1c49afa3b184d0c694ad6c',
+		'format' : 'iframe',
+		'height' : 50,
+		'width' : 320,
+		'params' : {}
+	};
+	document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://magnificentmanlyyeast.com/a7e6ae4bcf1c49afa3b184d0c694ad6c/invoke.js"></scr' + 'ipt>');
+</script>
+		
+	</center>
+					
+				</div>
+			</div>
+			<div class="row content mb-4">
+				<div class="col-md-12">					
+					
+	
+	<div class="card-columns">
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DRails%25E3%2581%25A7CSV%25E3%2582%2592%25E5%2587%25BA%25E5%258A%259B%25E3%2581%2599%25E3%2582%258B%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%2528Shift_JIS%25E5%25AF%25BE%25E5%25BF%259C%2529%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Ddc78f22121c8c71aa12e1475edfe1cbd&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540hirokik-0076%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Db3b242d2f6b7ccb3c57183efdfbb0e55&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=47a7a8678fd7e1a49d0954384e81abab" data-lightbox="roadtrip" data-title="Railsでcsvを出力する機能を実装 Shift Jis対応 Qiita">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fcdn.qiita.com%2Fassets%2Fpublic%2Farticle-ogp-background-1150d8b18a7c15795b701a55ae908f94.png?ixlib=rb-4.0.0&amp;w=1200&amp;mark=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D380%26txt%3DRails%25E3%2581%25A7CSV%25E3%2582%2592%25E5%2587%25BA%25E5%258A%259B%25E3%2581%2599%25E3%2582%258B%25E6%25A9%259F%25E8%2583%25BD%25E3%2582%2592%25E5%25AE%259F%25E8%25A3%2585%2528Shift_JIS%25E5%25AF%25BE%25E5%25BF%259C%2529%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D54%26txt-clip%3Dellipsis%26txt-align%3Dcenter%252Cmiddle%26s%3Ddc78f22121c8c71aa12e1475edfe1cbd&amp;mark-align=center%2Cmiddle&amp;blend=https%3A%2F%2Fqiita-user-contents.imgix.net%2F~text%3Fixlib%3Drb-4.0.0%26w%3D840%26h%3D500%26txt%3D%2540hirokik-0076%26txt-color%3D%2523333%26txt-font%3DHiragino%2520Sans%2520W6%26txt-size%3D45%26txt-align%3Dright%252Cbottom%26s%3Db3b242d2f6b7ccb3c57183efdfbb0e55&amp;blend-align=center%2Cmiddle&amp;blend-mode=normal&amp;s=47a7a8678fd7e1a49d0954384e81abab" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw8Hm3K9K5cqOzDdQ04O9vAKjtR6YfqYtVKshyWCSrppAckj2iGJDMLMevXdEZTyokb0w';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Railsでcsvを出力する機能を実装 Shift Jis対応 Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://wordpress04-uploads.moneyforward.com/wp-content/uploads/sites/5/2019/07/csv_export_charset_select.png" data-lightbox="roadtrip" data-title="Csvダウンロード時にshift Jisおよびutf 8の文字コード選択ができるよう対応しました マネーフォワード クラウド経費">
+						<img class="card-img" src="https://wordpress04-uploads.moneyforward.com/wp-content/uploads/sites/5/2019/07/csv_export_charset_select.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpWtK6jC_nAuAKEhyPeRqVBUlmKUBjyMNjnJoB2nk_86EccqeYJugghH1TpdLr3rBR17s';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Csvダウンロード時にshift Jisおよびutf 8の文字コード選択ができるよう対応しました マネーフォワード クラウド経費
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://medium-company.com/wp-content/uploads/2020/07/csv_sample.png" data-lightbox="roadtrip" data-title="Csv Generate Railsでcsvファイルを出力する方法 Itを分かりやすく解説">
+						<img class="card-img" src="https://medium-company.com/wp-content/uploads/2020/07/csv_sample.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzKnGO42VsTtQJSC_UnRHTfv3C-6Vp2KI1La5aA_Dkdo333Gc51wTOCKjyfjmRs9PikrY';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Csv Generate Railsでcsvファイルを出力する方法 Itを分かりやすく解説
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ohmyenter.com/wp-content/uploads/2014/03/a8eeb973861c8a0152ac0b69f3a153e8.png" data-lightbox="roadtrip" data-title="実践 Railsにて検索結果をそのままcsv出力する やや手抜きで Oh My Enter">
+						<img class="card-img" src="https://ohmyenter.com/wp-content/uploads/2014/03/a8eeb973861c8a0152ac0b69f3a153e8.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8IgOXhY_lkxAn407wAZDS6I0WiyGJq21HfbD9JhMtWL0X07Q-HDQbFlsppHf2ofLNucg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				実践 Railsにて検索結果をそのままcsv出力する やや手抜きで Oh My Enter
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://picsum.photos/495/304.jpg?random=141" data-lightbox="roadtrip" data-title="8ixmpqqp2zhmsm">
+						<img class="card-img" src="https://picsum.photos/495/304.jpg?random=141" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYyyx8mSfRRqHrFvcrDNeRF5cJ0OBBculVu_4dPg18lbN4O2JFrSbUOGdtUty1drvwzgg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				8ixmpqqp2zhmsm
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ohmyenter.com/wp-content/uploads/2014/03/70696fa87ffcec102d657b9e9f0aacd1.png" data-lightbox="roadtrip" data-title="実践 Railsにて検索結果をそのままcsv出力する やや手抜きで Oh My Enter">
+						<img class="card-img" src="https://ohmyenter.com/wp-content/uploads/2014/03/70696fa87ffcec102d657b9e9f0aacd1.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKeRmG6M7q-emynzigUVXqTVj8IDEtqr5gaw-_qTc9nm1lcApVCrYpAWTHYH3f3AjHNZw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				実践 Railsにて検索結果をそのままcsv出力する やや手抜きで Oh My Enter
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+				<div class='card'>	
+			<div class="d-block p-4">
+	</div>		  	
+		  	<h3 class="h6 p-2"><b></b></h3>
+					</div>
+		
+						
+	  <div class='card'>
+	  	<a href="http://railscasts.com/static/episodes/asciicasts/E362I03.png" data-lightbox="roadtrip" data-title="362 Exporting Csv And Excel Railscasts">
+						<img class="card-img" src="http://railscasts.com/static/episodes/asciicasts/E362I03.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeRkNIpBGM_Uf8f0V6cXifLdhYk6xrZ_vzJvQV354a7C7vOYXs6BhQHUGVKIDoZPDswVA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				362 Exporting Csv And Excel Railscasts
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://medium-company.com/wp-content/uploads/2020/07/list_page_csv-1024x544.png" data-lightbox="roadtrip" data-title="Csv Generate Railsでcsvファイルを出力する方法 Itを分かりやすく解説">
+						<img class="card-img" src="https://medium-company.com/wp-content/uploads/2020/07/list_page_csv-1024x544.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbeC41wnSXCU21-sqVtUuK6MJ81BKywnorpUBJk0FRsiLEYW07Hm34Z8Mmb-xikv6WCxc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Csv Generate Railsでcsvファイルを出力する方法 Itを分かりやすく解説
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/6435922169448333205/12921228815712542238/1384426426" data-lightbox="roadtrip" data-title="Ruby Rails からexcelで文字化けしないcsvファイル作成 Roadmovie">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/6435922169448333205/12921228815712542238/1384426426" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzeguTihN8-dkuYs2fwqasyk2I6xR9OEVGsh7jtX39XqY4i9vhUNmaa4JXTHEf2K0-xZg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ruby Rails からexcelで文字化けしないcsvファイル作成 Roadmovie
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/8454420450067933038/8599973812299626523/1505835311" data-lightbox="roadtrip" data-title="Rubyでexcelから出力したshift Jisのcsvをutf 8に変換する Androidはワンツーパンチ 三歩進んで二歩下がる">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/8454420450067933038/8599973812299626523/1505835311" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG9ypUzbSaLrDqkociE0vNz_CexSf92v2Llsom-QP6kIrItrffcq9cUbKzibl7Turh3Do';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Rubyでexcelから出力したshift Jisのcsvをutf 8に変換する Androidはワンツーパンチ 三歩進んで二歩下がる
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://wordpress04-uploads.moneyforward.com/wp-content/uploads/sites/5/2019/07/journal_export_charset_select.png" data-lightbox="roadtrip" data-title="Csvダウンロード時にshift Jisおよびutf 8の文字コード選択ができるよう対応しました マネーフォワード クラウド経費">
+						<img class="card-img" src="https://wordpress04-uploads.moneyforward.com/wp-content/uploads/sites/5/2019/07/journal_export_charset_select.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQV7MvpmW8XWXey3eYSuI1TTCRVFmWkNowPTLJPdjgrx25XRuoEvfCg_qG6tsDZ4Pq4fbM';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Csvダウンロード時にshift Jisおよびutf 8の文字コード選択ができるよう対応しました マネーフォワード クラウド経費
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/m/maru877/20170703/20170703223258.png" data-lightbox="roadtrip" data-title="Csv Generateを使って 配列の中身をcsv形式でダウンロードする Maru877 S Blog">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/maru877/20170703/20170703223258.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmJitrGEm23esWuTXckesDxANy45rnipoRCAzkul3UHZ-DTJXA-0H40dk4ZHffga035TQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Csv Generateを使って 配列の中身をcsv形式でダウンロードする Maru877 S Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F279050%2F3f08df30-bf8b-62c9-1bf2-17b90ad6e55d.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=7cd76e3c0530595ae5e9791f7a8479c6" data-lightbox="roadtrip" data-title="Railsで作成したcsvをs3に出力する方法 Laptrinhx">
+						<img class="card-img" src="https://qiita-user-contents.imgix.net/https%3A%2F%2Fqiita-image-store.s3.ap-northeast-1.amazonaws.com%2F0%2F279050%2F3f08df30-bf8b-62c9-1bf2-17b90ad6e55d.png?ixlib=rb-1.2.2&amp;auto=format&amp;gif-q=60&amp;q=75&amp;s=7cd76e3c0530595ae5e9791f7a8479c6" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrF1lfnMNtd1rMXqVrvWDt58B8C_HGbrUe5KnO6fizb1S-MLYNGSBpie_nT3ekHBbQiAo';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Railsで作成したcsvをs3に出力する方法 Laptrinhx
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://user-images.githubusercontent.com/13635059/71774393-2550f180-2fb1-11ea-8503-7fdabbee5388.png" data-lightbox="roadtrip" data-title="Aws S3 にある Shift Jis の Csv ファイルをアップロードした後 Utf 8 に変換し ダウンロードせずに展開する例 Aws Ruby Gem Issue 2917 Yumainaura Yumainaura Github">
+						<img class="card-img" src="https://user-images.githubusercontent.com/13635059/71774393-2550f180-2fb1-11ea-8503-7fdabbee5388.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQub5ebZy_3uVZtwchEaCNHNnUAy07A2czGkfbdM_efWip_W0betJybqVVHZkd3_sy77I4';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Aws S3 にある Shift Jis の Csv ファイルをアップロードした後 Utf 8 に変換し ダウンロードせずに展開する例 Aws Ruby Gem Issue 2917 Yumainaura Yumainaura Github
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ccbaxy.xyz/blog/2020/02/17/ruby24/ruby2401.png" data-lightbox="roadtrip" data-title="Railsでcsvファイルのダウンロード機能を作成する Octo S Blog">
+						<img class="card-img" src="https://ccbaxy.xyz/blog/2020/02/17/ruby24/ruby2401.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8fJawLYW4uwuptGjmDt3v07a0bMvaJAw15OTURvI66nkUKh-XDjpTKOUPZhh98sOSdQU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Railsでcsvファイルのダウンロード機能を作成する Octo S Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://spirits.appirits.com/wp-content/uploads/2020/12/38b1eec575f9b2d83f8b6e132cce011e.png" data-lightbox="roadtrip" data-title="Bom付きutf 8で文字化けしないcsv出力 Appirits Spirits">
+						<img class="card-img" src="https://spirits.appirits.com/wp-content/uploads/2020/12/38b1eec575f9b2d83f8b6e132cce011e.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcPsuTY6CiT176pj0aRv-q5cKCv657e_KHuqtrhp-uIHMDkSL_8f5t-r5ewK-vrzU9ECE';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Bom付きutf 8で文字化けしないcsv出力 Appirits Spirits
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://qiita-image-store.s3.amazonaws.com/0/61098/profile-images/1507638276" data-lightbox="roadtrip" data-title="Railsからshift Jisとutf 8でcsv出力する Qiita">
+						<img class="card-img" src="https://qiita-image-store.s3.amazonaws.com/0/61098/profile-images/1507638276" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHxKNuOHJe9MEDV8curkwVWtOhW73e1CjWpWtAi5AiU3MnIjvAtdUPseV6LPNCRS1TAQc';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Railsからshift Jisとutf 8でcsv出力する Qiita
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.imd-net.com/media/2014/11/csv_export_3.png" data-lightbox="roadtrip" data-title="Rails4で実装するcsvのインポート エクスポート ホームページ制作 大阪 インフォメーションメディアデザイン株式会社">
+						<img class="card-img" src="https://www.imd-net.com/media/2014/11/csv_export_3.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxeHztObrQYiLfkrBpBA0tT6j1qP90IdoHSurw5L4PlO-mLIcKYXpqEbL5HcrTOF_x9wI';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Rails4で実装するcsvのインポート エクスポート ホームページ制作 大阪 インフォメーションメディアデザイン株式会社
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/11696248318758283904/11696248318758535658/1381365212" data-lightbox="roadtrip" data-title="Ruby On Rails で Utf 8 から Shift Jis にしたかった のえら">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/11696248318758283904/11696248318758535658/1381365212" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-cy__5FgheN5POarJF0sY5-qvXnTgjJrmmXNw5hphEQWbJcqO-V6r9IDH1MqnB536lWs';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Ruby On Rails で Utf 8 から Shift Jis にしたかった のえら
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.imd-net.com/media/2014/11/csv_export_2.png" data-lightbox="roadtrip" data-title="Rails4で実装するcsvのインポート エクスポート ホームページ制作 大阪 インフォメーションメディアデザイン株式会社">
+						<img class="card-img" src="https://www.imd-net.com/media/2014/11/csv_export_2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvYiVJlla_03hx8_7moWu9mb7JW8jFFQQ12rJv3yBik3AWNccMDoURbK2P6SO-Uy6TRkU';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Rails4で実装するcsvのインポート エクスポート ホームページ制作 大阪 インフォメーションメディアデザイン株式会社
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://i.gyazo.com/3cdd6421f911ab06e034171376c5b00d.png" data-lightbox="roadtrip" data-title="今すぐ対策できる Htmlで文字化けを直す方法 Techacademyマガジン">
+						<img class="card-img" src="https://i.gyazo.com/3cdd6421f911ab06e034171376c5b00d.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZfqlFptZqAy0PGtkf9Ji40WyLAqwH7cnXDQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				今すぐ対策できる Htmlで文字化けを直す方法 Techacademyマガジン
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://creive.me/wp-content/uploads/2017/10/0d40a5e4a645fc6b96e767d64ac0878e-2.png" data-lightbox="roadtrip" data-title="サーチコンソールからダウンロードしたcsvファイルの文字化けをなおす方法 Creive">
+						<img class="card-img" src="https://creive.me/wp-content/uploads/2017/10/0d40a5e4a645fc6b96e767d64ac0878e-2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEbEmasylbLfOYmDF3TJzC5gTkWDNbBPTCgA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				サーチコンソールからダウンロードしたcsvファイルの文字化けをなおす方法 Creive
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://s3-ap-northeast-1.amazonaws.com/joyzo-wp-kintoneblog/blog/wp-content/uploads/2016/05/26142803/kb02.png" data-lightbox="roadtrip" data-title="Csvファイルの書き出し 読み込みの注意点 キントマニア Kintone活用ブログ">
+						<img class="card-img" src="https://s3-ap-northeast-1.amazonaws.com/joyzo-wp-kintoneblog/blog/wp-content/uploads/2016/05/26142803/kb02.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuy4Z4HSvH8eeVK-7OuLOfqPQGT26_ucYPIA';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Csvファイルの書き出し 読み込みの注意点 キントマニア Kintone活用ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.ark-web.jp/movabletype/assets_c/2015/09/aformpost11-thumb-500xauto-1342.png" data-lightbox="roadtrip" data-title="受付データのダウンロード 高機能フォームプラグインa Formドキュメント Web制作のアークウェブ">
+						<img class="card-img" src="https://www.ark-web.jp/movabletype/assets_c/2015/09/aformpost11-thumb-500xauto-1342.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgIgUNqYzZKFaw2pciQMxL4QNldfuX9qPCpg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				受付データのダウンロード 高機能フォームプラグインa Formドキュメント Web制作のアークウェブ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="/search?q=node.js+logo&amp;tbm=isch" data-lightbox="roadtrip" data-title="1">
+						<img class="card-img" src="/search?q=node.js+logo&amp;tbm=isch" onerror="this.onerror=null;this.src='/search?q=node.js+logo&amp;tbm=isch';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				1
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.omise.co/assets/screenshots/FAQ/FAQ-rightclick.jpg" data-lightbox="roadtrip" data-title="Omise Csvファイルが文字化けしています どうしたらよいですか">
+						<img class="card-img" src="https://cdn.omise.co/assets/screenshots/FAQ/FAQ-rightclick.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF7xvEUFtyh4nTBwS5SYx9uBJbmC-tv8_BOw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Omise Csvファイルが文字化けしています どうしたらよいですか
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn.omise.co/assets/screenshots/FAQ/FAQ-addcsvslectjis.jpg" data-lightbox="roadtrip" data-title="Omise Csvファイルが文字化けしています どうしたらよいですか">
+						<img class="card-img" src="https://cdn.omise.co/assets/screenshots/FAQ/FAQ-addcsvslectjis.jpg" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQbWq7Sq2eLeFkHGW5Pc0A5rMTfmybAvhXGw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Omise Csvファイルが文字化けしています どうしたらよいですか
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://www.oiax.jp/rails/files/rails_for_designers_csv_excel_table2.png" data-lightbox="roadtrip" data-title="第7回 Csv形式経由でexcelデータを読み込む Webデザイナーのためのruby On Rails Ruby On Rails With Oiax">
+						<img class="card-img" src="https://www.oiax.jp/rails/files/rails_for_designers_csv_excel_table2.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpH_rwoyiRHYClGYvh_lpgVNRCh-CQHNXQEw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				第7回 Csv形式経由でexcelデータを読み込む Webデザイナーのためのruby On Rails Ruby On Rails With Oiax
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://ogimage.blog.st-hatena.com/6435922169448294636/6435922169448424390/1364868885" data-lightbox="roadtrip" data-title="Send Dataでファイルを書き出すときの日本語ファイル名の文字化け対策 Rails つまみぐい">
+						<img class="card-img" src="https://ogimage.blog.st-hatena.com/6435922169448294636/6435922169448424390/1364868885" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwmK9H5vN6AM-9OAff2GRDoac_rgoYR_MPIQ';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Send Dataでファイルを書き出すときの日本語ファイル名の文字化け対策 Rails つまみぐい
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://s3-ap-northeast-1.amazonaws.com/joyzo-wp-kintoneblog/blog/wp-content/uploads/2016/05/26150143/kb031.png" data-lightbox="roadtrip" data-title="Csvファイルの書き出し 読み込みの注意点 キントマニア Kintone活用ブログ">
+						<img class="card-img" src="https://s3-ap-northeast-1.amazonaws.com/joyzo-wp-kintoneblog/blog/wp-content/uploads/2016/05/26150143/kb031.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm3LuUH8ZbQMOAmAVjkJezzaB5nP4iBCg0Ag';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Csvファイルの書き出し 読み込みの注意点 キントマニア Kintone活用ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://creive.me/wp-content/uploads/2017/10/64b056cf161d2d028db08703d79ed537.png" data-lightbox="roadtrip" data-title="サーチコンソールからダウンロードしたcsvファイルの文字化けをなおす方法 Creive">
+						<img class="card-img" src="https://creive.me/wp-content/uploads/2017/10/64b056cf161d2d028db08703d79ed537.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Pa-NfjACTY4eKyaUJq0CzP_u_lVqEdAhaw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				サーチコンソールからダウンロードしたcsvファイルの文字化けをなおす方法 Creive
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://cdn-ak.f.st-hatena.com/images/fotolife/m/maru877/20170703/20170703224659.png" data-lightbox="roadtrip" data-title="Csv Generateを使って 配列の中身をcsv形式でダウンロードする Maru877 S Blog">
+						<img class="card-img" src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/maru877/20170703/20170703224659.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSMliAvnAJVp7bM7PBu2OeaRz1EZUCBiSTRg';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Csv Generateを使って 配列の中身をcsv形式でダウンロードする Maru877 S Blog
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+						
+	  <div class='card'>
+	  	<a href="https://s3-ap-northeast-1.amazonaws.com/joyzo-wp-kintoneblog/blog/wp-content/uploads/2016/05/26150005/b011.png" data-lightbox="roadtrip" data-title="Csvファイルの書き出し 読み込みの注意点 キントマニア Kintone活用ブログ">
+						<img class="card-img" src="https://s3-ap-northeast-1.amazonaws.com/joyzo-wp-kintoneblog/blog/wp-content/uploads/2016/05/26150005/b011.png" onerror="this.onerror=null;this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTC5NY996zgt451ZhxY7EMaPSiYcEuRfwbAw';">
+				
+	    </a>
+	    		<p class='blockquote-footer py-1 px-2'>
+			<i>
+				<small class='text-muted'>
+				Csvファイルの書き出し 読み込みの注意点 キントマニア Kintone活用ブログ
+				</small>
+			</i>        
+		</p>
+	  </div>
+
+		
+		
+	</div>
+
+		 
+		<div class="d-block mt-4 p-3">
+
+			Source : <a href="https://pinterest.com" rel="nofollow noopener">pinterest.com</a>
+		</div>
+		
+				</div>
+				<div class="col-sm-12 widget">
+					<div class="d-block p-4">
+	<center>
+		<!-- BOTTOM BANNER ADS -->
+	</center>
+</div>				</div>
+			</div>
+			<div class="row footer">
+				<div class="col-md-12 text-center py-4">
+										<a href="/p/dmca.html">Dmca</a>
+										<a href="/p/contact.html">Contact</a>
+										<a href="/p/privacy-policy.html">Privacy Policy</a>
+										<a href="/p/copyright.html">Copyright</a>
+					
+				</div>
+			</div>
+		</main>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" integrity="sha256-MAgcygDRahs+F/Nk5Vz387whB4kSK9NXlDN3w58LLq0=" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox.min.js" integrity="sha256-CtKylYan+AJuoH8jrMht1+1PMhMqrKnB8K5g012WN5I=" crossorigin="anonymous"></script>
+		
+		<!-- Footer CSS JS -->
+		
+		
+		
+			</body>
+</html>
